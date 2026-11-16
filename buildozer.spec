@@ -10,7 +10,7 @@ source.include_exts = py,png,jpg,kv
 
 version = 1.0
 
-requirements = python3,kivy
+requirements = python3,kivy,charset-normalizer==2.1.1
 
 p4a.branch = develop
 
@@ -18,7 +18,7 @@ orientation = portrait
 fullscreen = 0
 
 android.permissions = INTERNET
-android.archs = arm64-v8a
+android.archs = armeabi-v7a
 
 [buildozer]
 
