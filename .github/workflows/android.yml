@@ -10,6 +10,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+
     container:
       image: ghcr.io/kivy/buildozer:latest
 
@@ -17,9 +18,10 @@ jobs:
       - name: Download project
         uses: actions/checkout@v4
 
-      - name: Build APK
+      - name: Accept Android licenses and build APK
         run: |
-          buildozer android debug
+          set +o pipefail
+          yes | buildozer android debug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
