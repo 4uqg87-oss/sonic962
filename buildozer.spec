@@ -1,3 +1,4 @@
+
 [app]
 
 title = SONIC 962 CYBER
@@ -10,6 +11,8 @@ source.include_exts = py,png,jpg,kv
 version = 1.0
 
 requirements = python3,kivy
+
+p4a.branch = develop
 
 orientation = portrait
 fullscreen = 0
